@@ -3,3 +3,62 @@ body {
   height: 100%;
   margin: 0;
 }
+/* Center the header text */
+header {
+  text-align: center;
+}
+
+/* Center the only image on the page */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style navigation links within the navbar */
+.navbar a {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: grey; /* Or any color you prefer */
+  text-decoration: none; /* Optional: remove underline */
+  color: white; /* Optional: better contrast */
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Center nav links container */
+.navbar {
+  text-align: center;
+}
+
+/* Style image caption */
+figcaption {
+  font-size: smaller; /* Shrink font */
+  text-align: center;
+}
+
+/* Style paragraphs inside #featured-property */
+#featured-property p {
+  width: 800px;
+  margin: 10px auto; /* vertical margin + center horizontally */
+  text-align: center;
+}
+
+/* Make #details section horizontal by floating divs */
+#details div {
+  float: left;
+  width: 25%; /* Four divs side-by-side */
+  background-color: lightgrey; /* To unify background */
+  text-align: center;
+  box-sizing: border-box; /* include padding and borders in width */
+  padding: 10px;
+}
+
+/* Clear floats if necessary */
+#details::after {
+  content: "";
+  display: table;
+  clear: both;
+}
